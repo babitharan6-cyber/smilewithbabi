@@ -101,26 +101,7 @@ em{font-style:italic}
 }
 .reveal-mask.active img{transform:scale(1)}
 
-/* ==========================================================
-   PRELOADER
-   ========================================================== */
-#preloader{
-  position:fixed;inset:0;z-index:9000;
-  background:var(--bg);
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:1.6rem;
-  transition:opacity .6s ease;
-}
-#preloader.done{opacity:0;pointer-events:none}
-.pl-name{
-  font-family:var(--serif);font-size:clamp(1.6rem,3.5vw,2.4rem);
-  font-style:italic;color:var(--text);
-  opacity:0;animation:plFade .8s ease .2s forwards;
-}
-@keyframes plFade{to{opacity:1}}
-.pl-line{width:100px;height:1px;background:var(--line);overflow:hidden}
-.pl-fill{height:100%;width:0;background:var(--accent);animation:plFill 1.4s var(--ease) .4s forwards}
-@keyframes plFill{to{width:100%}}
+
 
 /* ==========================================================
    HEADER — adovasio-inspired minimal

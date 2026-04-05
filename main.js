@@ -5,18 +5,8 @@ import Lenis from '@studio-freight/lenis'
 
 gsap.registerPlugin(ScrollTrigger)
 
-/* ============================
-   PRELOADER
-   ============================ */
-const preloader = document.getElementById('preloader')
 
-window.addEventListener('load', () => {
-  gsap.delayedCall(1.6, () => {
-    preloader.classList.add('done')
-    setTimeout(() => { preloader.style.display = 'none' }, 600)
-    heroEntrance()
-  })
-})
+heroEntrance()
 
 /* ============================
    LENIS SMOOTH SCROLL — FIXED
